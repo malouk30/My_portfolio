@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="logo">Portfolio</div>
-            <ul>
-                <li><a href="#hero"></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#entrepreneurship">Entrepreneurship</a></li>
-                <li><a href="#qualities">Qualities</a></li>
-            </ul>
+    <nav class="main-nav navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#entrepreneurship">Entrepreneurship</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qualities">Qualities</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
+    <section id="hero" class="hero-section text-center py-5">
+        <div class="container">
             <div class="quote-container">
                 <i class="fas fa-code quote-icon left"></i>
                 <h1>
@@ -36,21 +42,21 @@
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="section-container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-left">
-                    <div class="about-image-container">
-                        <img src="images/me.jpg" alt="Malek Benjemia" class="about-image">
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="about-image-container position-relative">
+                        <img src="images/me.jpg" alt="Malek Benjemia" class="about-image img-fluid rounded-circle">
                         <div class="image-overlay"></div>
-                        <div class="social-links-about">
-                            <a href="https://github.com/malouk30" target="_blank"><i class="fab fa-github"></i></a>
+                        <div class="social-links-about position-absolute top-50 start-50 translate-middle">
+                            <a href="https://github.com/malouk30" target="_blank" class="me-2"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/malek-ben-jemia-61b664268/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="about-right">
+                <div class="col-md-6">
                     <div class="about-text">
                         <h3>Full Stack Developer & Cloud Engineer</h3>
                         <p class="professional-summary">
@@ -58,12 +64,12 @@
                             What do I love? Turning ideas into code, challenges into solutions, and learning every step of the way. Whether it's development, cloud, or DevOps, I find my balance in exploring, creating, and continuously improving
                         </p>
                         <div class="about-details">
-                            <div class="detail-item">
-                                <i class="fas fa-graduation-cap"></i>
+                            <div class="detail-item d-flex align-items-center mb-2">
+                                <i class="fas fa-graduation-cap me-2"></i>
                                 <span>Engineering Student</span>
                             </div>
-                            <div class="detail-item">
-                                <i class="fas fa-map-marker-alt"></i>
+                            <div class="detail-item d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt me-2"></i>
                                 <span>Tunisia</span>
                             </div>
                         </div>
@@ -354,6 +360,7 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
