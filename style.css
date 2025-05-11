@@ -1579,3 +1579,101 @@ img {
         padding: 0 10px;
     }
 }
+
+/* Responsive Design pour tous les écrans */
+@media screen and (max-width: 320px) {
+    .hero-section {
+        min-height: 70vh;
+        padding-top: 80px;
+    }
+
+    .animated-text {
+        font-size: 1.4rem;
+    }
+
+    .section-container {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .hero-section {
+        min-height: 75vh;
+        padding-top: 90px;
+    }
+
+    .animated-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+        padding-top: 100px;
+    }
+
+    .skills-grid, 
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-container {
+        padding: 60px 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .section-container {
+        padding: 80px 40px;
+    }
+}
+
+/* Ajustements spécifiques pour les hauteurs d'écran */
+@media screen and (max-height: 700px) {
+    .hero-section {
+        min-height: 100vh;
+        padding: 60px 0;
+    }
+
+    .animated-text {
+        font-size: 1.8rem;
+    }
+}
+
+/* Ajustements pour orientation paysage sur mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 120vh;
+    }
+
+    .nav-container {
+        padding: 5px 20px;
+    }
+
+    .quote-container {
+        padding: 20px;
+    }
+}
+
+/* Optimisations pour grands écrans */
+@media screen and (min-width: 1920px) {
+    .section-container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .animated-text {
+        font-size: 3.5rem;
+    }
+}
