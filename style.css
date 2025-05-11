@@ -1478,38 +1478,3 @@ body {
         gap: 10px;
     }
 }
-
-.navbar {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-toggler {
-    border: none;
-    padding: 0.25rem 0.75rem;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        background: white;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        margin-top: 0.5rem;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .nav-item {
-        padding: 0.5rem 0;
-    }
-}
