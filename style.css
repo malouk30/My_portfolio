@@ -165,10 +165,10 @@
     animation: rotate 20s linear infinite;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-}
+} */
 
 .section-container {
     max-width: 800px;
