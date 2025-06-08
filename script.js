@@ -37,4 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Message envoyé !');
         form.reset();
     });
+
+    // Animation périodique de l'ourson
+    const bear = document.querySelector('.peeking-bear');
+    setInterval(() => {
+        bear.style.transform = 'translateY(-50%) translateX(40px)';
+        setTimeout(() => {
+            bear.style.transform = 'translateY(-50%) translateX(0)';
+        }, 1000);
+    }, 5000);
 });
