@@ -300,43 +300,6 @@
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* Mise à jour des styles de la photo de profil */
-.profile-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 2rem;
-    z-index: 3;
-    transform: none !important; /* Empêche toute transformation */
-    animation: none !important; /* Désactive toute animation */
-}
-
-.profile-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 3;
-    transform: none !important; /* Empêche toute transformation */
-    animation: none !important; /* Désactive toute animation */
-}
-
-/* Ajustement des images flottantes */
-.floating-image {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    z-index: 1;
-}
-
-#banner .inner {
-    position: relative;
-    z-index: 2;
-}
-
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
