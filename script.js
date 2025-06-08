@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animation périodique de l'ourson
     const bear = document.querySelector('.peeking-bear');
     setInterval(() => {
-        bear.style.transform = 'translateY(-50%) translateX(40px)';
+        bear.style.transform = 'translateY(-50%) translateX(60px)';  // Augmenté à 60px
         setTimeout(() => {
             bear.style.transform = 'translateY(-50%) translateX(0)';
-        }, 1000);
-    }, 5000);
+        }, 1500);  // Durée augmentée à 1.5s
+    }, 4000);  // Répétition toutes les 4s
 });
